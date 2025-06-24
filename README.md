@@ -2,8 +2,6 @@
 A project for demonstrating JBang features
 
 ```java
-
-///usr/bin/env jbang "$0" "$@" ; exit $?
 //DEPS org.apache.commons:commons-text:1.13.1
 
 import static java.lang.System.*;
@@ -21,5 +19,4 @@ public class jbangurl {
 	}
 
 }
-
 ```
