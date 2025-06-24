@@ -2,11 +2,11 @@
   "catalogs": {},
   "aliases": {
     "jbang-nobuild": {
-      "script-ref": "jbang-nobuild/jbang-nobuild.java",
+      "script-ref": "jbang-nobuild/jbangnobuild.java",
       "description": "Run a Java program without building it first"
     },
     "jbang-url": {
-      "script-ref": "jbang-url/jbang-url.java",
+      "script-ref": "jbang-url/jbangurl.java",
       "description": "Run a Java program from a URL"
     }
   }
