@@ -10,6 +10,7 @@ cd jbang-demo
 jbang app uninstall jgit
 jbang app uninstall wut
 jbang app uninstall wtf
+jbang catalog remove demo
 ```
 
 ## JBang Script Examples
@@ -25,6 +26,8 @@ jbang demo.java
 ```java
 //DEPS org.apache.commons:commons-text:1.13.1
 
+import org.apache.commons.text.StringSubstitutor;
+
 out.println( StringSubstitutor.replaceSystemProperties(  "You are running with java.version = ${java.version} and os.name = ${os.name}." ) );
 ```
 
@@ -33,12 +36,16 @@ out.println( StringSubstitutor.replaceSystemProperties(  "You are running with j
 ```shell
 cd
 jbang jbang-demo/demo.java
+```
 
+https://gist.github.com/robintegg-createfuture/0810081f050e951f1b1dc800c1e44306
+
+```shell
 # From url
 jbang https://gist.github.com/robintegg-createfuture/0810081f050e951f1b1dc800c1e44306
 ```
 
-https://github.com/robintegg-createfuture/jbang-demo
+https://github.com/robintegg-createfuture/jbang-demo/blob/main/jbang-url/jbangurl.java
 
 ```shell
 # From github
@@ -54,7 +61,8 @@ Using maven coords
 https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit.pgm/7.3.0.202506031305-r
 
 ```shell
-jbang org.eclipse.jgit:org.eclipse.jgit.pgm:7.3.0.202506031305-r version
+jbang org.eclipse.jgit:org.eclipse.jgit.pgm:7.3.0.202506031305-r
+jbang org.eclipse.jgit:org.eclipse.jgit.pgm:7.3.0.202506031305-r glog
 ```
 
 ## Install apps
@@ -86,5 +94,5 @@ https://github.com/robintegg-createfuture/jbang-demo/blob/main/jbang-nobuild/jba
 https://jitpack.io/#robintegg-createfuture/jbang-demo
 
 ```shell
-jbang run jbangnobuild@demo
+jbang jbang-nobuild@demo
 ```
